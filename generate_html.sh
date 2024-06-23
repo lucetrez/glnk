@@ -64,7 +64,7 @@ for subpath in "${!redirect_mapping[@]}"; do
     # Create the content for the index.html file
     content="<!DOCTYPE html>
 <meta charset=utf-8>
-<title>Redirecting to $redirect_link</title>
+<title>Redirecting to $subpath</title>
 <meta http-equiv=refresh content=\"0; URL=$redirect_link\">
 <link rel=canonical href=\"$redirect_link\">
 "
