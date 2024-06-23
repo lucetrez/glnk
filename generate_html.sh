@@ -9,7 +9,7 @@ cat <<EOL >$golinks_html
 <!DOCTYPE html>
 <html>
 <head>
-    <title>lucetre GitHub Go Links</title>
+    <title>Go Links</title>
     <style>
       table {
         border-collapse: collapse;
