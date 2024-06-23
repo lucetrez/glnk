@@ -1,2 +1,2 @@
-# go
-lucetre GitHub Go Links
+# Go Links
+GitHub Go Links
