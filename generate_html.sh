@@ -35,7 +35,8 @@ cat <<EOL >$golinks_html
 EOL
 
 # Loop through the JSON data and generate the table rows
-jq -r '. | to_entries[] | "<tr><td><a href=\"/go" + .key + "\">/go" + .key + "</a></td><td><a href=\"" + .value + "\">" + .value + "</a></td></tr>"' golinks.json >>$golinks_html
+# jq -r '. | to_entries[] | "<tr><td><a href=\"/go" + .key + "\">/go" + .key + "</a></td><td><a href=\"" + .value + "\">" + .value + "</a></td></tr>"' golinks.json >>$golinks_html
+jq -r '. | to_entries[] | "<tr><td><a href=\"" + .key + "\">" + .key + "</a></td><td><a href=\"" + .value + "\">" + .value + "</a></td></tr>"' golinks.json >>$golinks_html
 
 # Complete the HTML file
 echo "</table></body></html>" >>$golinks_html
